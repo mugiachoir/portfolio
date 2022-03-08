@@ -1,0 +1,142 @@
+$primarySolid: #361173;
+$primaryGradient:linear-gradient(113.72deg, #180635 57.97%, #361173 107.99%);;
+$secondarySolid: #72FA19;
+$fontDark: #20054B; 
+
+$shadow1: -10px 15px 25px 0px
+  rgba(
+    $color: #170e1b,
+    $alpha: 0.6,
+  );
+
+
+  $shadow2: -3px 5px 25px 0px
+  rgba(
+    $color: #170e1b,
+    $alpha: 0.1,
+  );
+
+.exp{
+    display: grid;
+    text-align: left;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    padding: 2em;
+
+    h1,h2,h3,h4{
+      color: #360880;
+  }
+
+    .work-exp{
+      color: $fontDark;
+      padding: 2em;
+    }
+  
+    .exp-desc{
+      padding: 2em;
+      color: $fontDark;
+    }
+    /* (A) "SET" THE TIMELINE CONTAINER */
+    .vtl {
+      /* (A1) RELATIVE POSITION NECESSARY TO PROPERLY POSITION TIMELINE LATER */
+      position: relative;
+      margin-left: 5em;
+      margin-top: 2em;
+    }
+    
+    /* (B) DRAW TIMELINE USING ::BEFORE */
+    .vtl::before {
+      /* (B1) DRAW THE TIMELINE */
+      content: '';
+      width: 5px;
+      background-color: $secondarySolid;
+      /* (B2) POSITION IT TO THE LEFT */
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -3.7em;
+    }
+    
+    /* (C) STYLES FOR THE EVENTS */
+    div.event {
+      padding: 1em 2em;
+      background-color: rgba(
+        $color: $secondarySolid,
+        $alpha: 0.2,
+      );
+      position: relative;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    
+    /* (D) STYLES FOR THE DATE & TEXT */
+    strong.edate {
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+    p.etxt {
+      margin: 10px 0 0 0;
+    }
+    
+    /* (E) ADD "SPEECH BUBBLE TRIANGLE" TO THE EVENTS */
+    div.event::before {
+      content: '';
+      border: 10px solid transparent;
+      border-right-color: rgba(
+          $color: $secondarySolid,
+          $alpha: 0.2,
+        );
+      border-left: 0;
+      position: absolute;
+      top: 20%;
+      left: -10px;
+    }
+    
+    /* (F) ADD A CIRCLE ON THE TIMELINE TO INDICATE AN EVENT */
+    div.event::after {
+      content: '';
+      background: #fff;
+      border: 4px solid $secondarySolid;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      position: absolute;
+      top: 20%;
+      left: -4.5em;
+    }
+  }
+  
+  // IPAD
+@media screen and (min-width:673px){
+    .exp{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2em 4em;
+        .exp-desc{
+            padding: 2em;
+            padding-right: 1em;
+            color: $fontDark;
+          }
+      }
+}
+
+// LAPTOP
+@media screen and (min-width:991px){
+    .exp{
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        padding: 2em 6em;
+  
+        .vtl {
+          position: relative;
+          margin-left: 5em;
+          margin-top: 2em;
+          max-width: 400px;
+        }
+  
+        .vtl::before {
+          left: -3.9em;
+        }
+        
+      }
+}

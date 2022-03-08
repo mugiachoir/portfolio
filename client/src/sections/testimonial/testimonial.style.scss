@@ -1,0 +1,98 @@
+$shadow1: 0 1px 1px rgba(0,0,0,0.12), 
+0 2px 2px rgba(0,0,0,0.12), 
+0 4px 4px rgba(0,0,0,0.12), 
+0 8px 8px rgba(0,0,0,0.12),
+0 16px 16px rgba(0,0,0,0.12);
+.testimoni{
+    background-color: #1B0637;
+    color: white;
+    text-align: left;
+    padding: 2em;
+    padding-bottom: 0;
+    width: 95%;
+    margin: 0 auto;
+    // box-shadow: $shadow1;
+    
+        border-radius: .5em;
+    .grid-container-halfsies{
+        display: grid;
+        .testimoni-texts{
+            order: 1;
+            padding: 2em;
+            // border: 3px solid #72FA19;
+            
+            border-radius: 4em 0 4em 0;
+            transition: all .3s;
+            .testimoni-subtitle{
+                display: flex;
+                margin-top: 1em;
+                text-align: right;
+                font-weight: bold;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 1em;
+                .position{
+                    color: #72FA19;
+                    font-size: 1.5rem;
+                }
+                .avatar{
+                    border-radius: 50%;
+                    width: 15%;
+                }
+            }
+            
+            &:hover{
+                transform: rotate(-3deg);
+                box-shadow: $shadow1;
+            }
+        }
+    
+        .testimoni-video{
+            order: 2;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    }
+    
+}
+
+// IPAD
+@media screen and (min-width:673px){
+    .testimoni{
+        padding-right: 4em;
+        padding-left: 4em;
+        width: 90%;
+        .grid-container-halfsies{
+            .testimoni-texts{
+                order: 2;
+                padding: 2em;
+                margin-top: -2em;
+            }
+        
+            .testimoni-video{
+                order: 1;
+            }
+        }
+        
+    }
+}
+
+// LAPTOP
+@media screen and (min-width:991px){
+    .testimoni{
+        padding-right: 6em;
+        padding-left: 4em;
+        .grid-container-halfsies{
+            .testimoni-texts{
+                order: 2;
+                padding: 2em;
+            }
+        
+            .testimoni-video{
+                order: 1;
+            }
+        }
+        
+    }
+}

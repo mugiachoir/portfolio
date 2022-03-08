@@ -1,0 +1,42 @@
+$primarySolid: #361173;
+$primaryGradient:linear-gradient(113.72deg, #180635 57.97%, #361173 107.99%);
+$secondarySolid: #72FA19;
+$fontDark: #20054B; 
+
+.spinnerOverlay{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    h2{
+        font-weight: lighter;
+        color: #361173;
+    }
+}
+
+
+.spinnerContainer{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 8px solid $primarySolid;
+    border-radius: 50%;
+    border-top-color: $secondarySolid;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    @keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes spin {
+      to {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+}
+
+

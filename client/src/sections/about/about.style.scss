@@ -1,0 +1,116 @@
+$primarySolid: #361173;
+$primaryGradient:linear-gradient(113.72deg, #180635 57.97%, #361173 107.99%);;
+$secondarySolid: #72FA19;
+$fontDark: #20054B; 
+
+$shadow1: -10px 15px 25px 0px
+  rgba(
+    $color: #170e1b,
+    $alpha: 0.6,
+  );
+
+
+  $shadow2: -3px 5px 25px 0px
+  rgba(
+    $color: #170e1b,
+    $alpha: 0.1,
+  );
+
+  .about{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: $fontDark;
+    padding: 2em;
+    padding-bottom: 0;
+
+    h1,h2,h3,h4{
+      color: #360880;
+  }
+    .about-texts{
+      order: 1;
+      padding: 1em;
+      margin-left: 0;
+      text-align: left;
+      margin-top: 0;
+      .about-headline{
+        display: none;
+      }
+    }
+    .about-name{
+     position: relative;
+     left: 0;
+     margin-top: 0;
+     h2{
+       font-weight: lighter;
+     }
+     h1{
+       font-size: 3rem;
+       span{
+         font-weight: lighter;
+       }
+     }
+    }
+    .about-image{
+      order: 2;
+      display: flex;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+// IPAD
+@media screen and (min-width:673px){
+    .about{
+      padding: 2em 4em;
+      padding-bottom: 0;
+        grid-template-columns: 1fr 1fr;
+        .about-texts{
+          padding: 2em;
+          margin-top: 2em;
+        }
+        .about-image{
+          order: 1;
+        }
+      }
+}
+
+  // LAPTOP
+@media screen and (min-width:991px){
+    .about{
+      padding: 2em 6em;
+      padding-bottom: 0;
+        .about-texts{
+          margin-top: 5em;
+          .about-headline{
+            display: block;
+          }
+        }
+        .about-name{
+          position: absolute;
+          left: 40%;
+          margin-top: 25%;
+          h2{
+            font-weight: lighter;
+          }
+          h1{
+            font-size: 6rem;
+            span{
+              font-weight: lighter;
+            }
+          }
+         }
+      }
+}
+
+// DESKTOP
+@media screen and (min-width:1297px){
+    .about-name{
+      h1{
+        font-size: 6rem;
+        span{
+          font-weight: lighter;
+        }
+      }
+    }
+}
