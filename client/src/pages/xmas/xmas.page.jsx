@@ -31,7 +31,7 @@ const Xmas=({setNavigation,setNav})=>{
                         <h1>GRAPHICS DESIGN</h1>
                         <p className='project-subtitle xmas-subtitle'>A few days before the Christmas holiday of 2021, my team leader tasked my team to create social media posts using the Christmas theme. What I had in mind for this theme was cool bluish color with a red accent, and then for the fonts, I wanted a curvy font for the headline, and a bit rounded but still readable font for the body. And I think Christmas is a good time to use a glassmorphism style that has been so popular for a few years. In the end, I made two versions of the design; one is for IG and Facebook and the other is for flyers or blog posts.</p>
                     </div>
-                    <div className="grid-container-halfsies">
+                    <div className="grid-container-halfsies align-top">
                         <img src={xmasBlog} alt="xmas blog" />
                         <img src={xmasPost} alt="xmas post" />
                     </div>

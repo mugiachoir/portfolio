@@ -33,9 +33,7 @@ $shadow1:0 3px 2px rgba(0,0,0,0.08),
       height: 100%;
      transition: all .5s;
       border-radius: .4em;
-      &:hover{
-        box-shadow: $shadow1;
-      }
+      
       .service-header{
         display: flex;
         flex-direction: column;
@@ -82,6 +80,9 @@ $shadow1:0 3px 2px rgba(0,0,0,0.08),
         gap: 2em;
         .service{
           padding: 1em;
+          &:hover{
+            box-shadow: $shadow1;
+          }
           .service-header{
             display: flex;
             flex-direction: row;

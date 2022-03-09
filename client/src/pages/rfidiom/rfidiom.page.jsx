@@ -1,4 +1,5 @@
 import React,{useEffect} from 'react';
+import './rfidiom.style.scss';
 
 
 import antenaAnimation from '../../assets/antena-animation.mp4';
@@ -53,13 +54,14 @@ const Rfidiom=({setNavigation,setNav})=>{
                         <h1>GRAPHICS DESIGN</h1>
                         <p className='project-subtitle rfidiom-subtitle'>Maybe the most often tasks that I had for RFIDiom was to design stuff like social media posts and blog posts. Two of the special cases in the graphic design job that I got were to create a glossary document containing terminology that is usually being used in RFID business and to create a zoom background design to be used when we do video conferences.</p>
                     </div>
-                    <div className="grid-container-halfsies">
+                    <div className="grid-container-halfsies align-top">
                         <img src={rfidiomBlogOne} alt="rfidiom blog one" />
                         <img src={rfidiomZoom} alt="rfidiom zoom bg" />
                     </div>
-                    <div className="grid-container-halfsies">
+                    <div className="spacer"></div>
+                    <div className="grid-container-halfsies align-top">
                         <img src={rfidiomBlogTwo} alt="rfidiom blog two" />
-                        <div className="grid-container-halfsies">
+                        <div className="grid-container-halfsies align-top">
                             <img src={rfidiomGlossary} alt="rfidiom glossary" />
                             <img src={rfidiomPost} alt="rfidiom post" />
                         </div>
