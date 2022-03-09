@@ -17,11 +17,14 @@ const AboutSection= React.forwardRef((props,ref)=>{
                 <h2 className="about-headline">
                     ABOUT ME
                 </h2>
-                <p>
-                I am a designer who specializes in 3D graphics. I am based in Subang, Indonesia. I have been
-                messing around with graphics assets my entire life. My earliest memory of a design-related
-                experience was when I first opened Adobe Photoshop in early Elementary School. In my spare time, I usually play volleyball. I also enjoy reading a variety of books, from novels to science books.
-                </p>
+                <div className="about-text">
+                    <p>
+                    I'm a designer based in Subang, Indonesia that focuses on 3D Graphics. My earliest memory of a design-related experience was when I first opened Adobe Photoshop in early Elementary School. Since then I've gained a lot of experience working on a different scale of projects, from individual projects to corporate class projects. Yet I still have great determination in learning new stuff. </p>
+
+                    <p>I also have experience of working with people from different countries and cultures, so I can communicate well with others and capable of working alone or inside a team.  </p>
+
+                    <p>I'm majoring in information systems at university, so I have experience in software development, especially front-end development, because it mixes my love for design, and my education as a developer. </p>
+                </div>
             </div>
         </div>
     )

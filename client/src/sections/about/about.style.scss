@@ -36,6 +36,11 @@ $shadow1: -10px 15px 25px 0px
         display: none;
       }
     }
+    .about-text{
+      p{
+        margin-bottom: 1em;
+      }
+    }
     .about-name{
      position: relative;
      left: 0;
@@ -64,7 +69,7 @@ $shadow1: -10px 15px 25px 0px
     .about{
       padding: 2em 4em;
       padding-bottom: 0;
-        grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
         .about-texts{
           padding: 2em;
           margin-top: 2em;
@@ -89,7 +94,7 @@ $shadow1: -10px 15px 25px 0px
         .about-name{
           position: absolute;
           left: 40%;
-          margin-top: 25%;
+          margin-top: 27%;
           h2{
             font-weight: lighter;
           }

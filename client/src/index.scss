@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Teko:wght@300;400;500;600;700&display=swap');
+
 // ROOT
 $primarySolid: #361173;
 $primaryGradient:linear-gradient(125.9deg, #361173 14.87%, #170533 108.64%);
@@ -36,6 +39,10 @@ body{
     line-height: 150%;
     max-width: 100vw;
     overflow-x: hidden;
+}
+
+p{
+  line-height: 160%;
 }
 
 h1,h2,h3,h4{

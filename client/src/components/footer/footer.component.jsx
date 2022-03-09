@@ -21,7 +21,7 @@ const Footer=React.forwardRef((props,ref)=>{
                     <hr />
                     <div className="socials">
                         <a href="mailto:mugia.miftahul@gmail.com"><img src={email} alt="email" /> mugia.miftahul@gmail.com</a>
-                        <a href="https://www.artstation.com/mugiamiftahulchoir8" target='_blank' rel='noreferrer'><img src={station} alt="station" />mugiamiftahulchoir8.artstation.com/</a>
+                        <a href="https://www.artstation.com/mugiamiftahulchoir8" target='_blank' rel='noreferrer'><img src={station} alt="station" />mugiamiftahulchoir8.artstation.com</a>
                         <a href="https://www.instagram.com/mugiadesign/" target='_blank' rel='noreferrer'><img src={ig} alt="ig" />@mugiadesign</a>
                         <a href="https://github.com/mugiachoir" target='_blank' rel='noreferrer'><img src={github} alt="github" />mugiachoir</a>
                     </div>

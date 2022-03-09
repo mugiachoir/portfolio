@@ -22,9 +22,22 @@ $shadow1: -10px 15px 25px 0px
     grid-template-columns: 1fr;
     gap: 2em;
     padding: 2em;
+    padding-bottom: 0;
 
     h1,h2,h3,h4{
       color: #360880;
+  }
+
+  .testimoni-video{
+    display: flex;
+    justify-content: flex-end;
+    video{
+      margin-bottom: -.25px;
+      margin-top: auto;
+    }
+  }
+  img{
+    width: 100%;
   }
 
     .work-exp{
@@ -112,6 +125,7 @@ $shadow1: -10px 15px 25px 0px
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 2em 4em;
+        padding-bottom: 0;
         .exp-desc{
             padding: 2em;
             padding-right: 1em;
@@ -126,7 +140,7 @@ $shadow1: -10px 15px 25px 0px
         display: grid;
         grid-template-columns: 1fr 1.5fr;
         padding: 2em 6em;
-  
+        padding-bottom: 0;
         .vtl {
           position: relative;
           margin-left: 5em;

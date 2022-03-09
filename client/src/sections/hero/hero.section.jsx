@@ -4,6 +4,7 @@ import './hero.style.scss';
 import heroImage from '../../assets/hero-image-green.png';
 import downloadIcon from '../../assets/download.svg';
 import emailIcon from '../../assets/mail.svg';
+import cv from '../../assets/Mugia-CV-2022.pdf';
 
 const HeroSection = React.forwardRef((props, ref) => {
     return (
@@ -16,7 +17,7 @@ modeling, 3D animation, graphics design, branding, user interface design, and fr
 development. Throughout my work, I specialize in 3D graphics.
                 </p>
                 <div className="flex-container-row">
-                    <a href="../../assets/mugias-portfolio.pdf" className="button second" download="mugia's portfolio"><img src={downloadIcon} alt="download" className="icon" />
+                    <a href={cv} className="button second" download><img src={downloadIcon} alt="download" className="icon" />
                         Download CV</a>
                     <a href="mailto:mugia.miftahul@gmail.com" className="button"><img src={emailIcon} alt="email" className="icon" /> Send me an email</a>
                 </div>
