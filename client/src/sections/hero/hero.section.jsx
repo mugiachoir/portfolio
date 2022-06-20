@@ -1,7 +1,7 @@
 import React from 'react';
 import './hero.style.scss';
 
-import heroImage from '../../assets/hero-image-green.png';
+import heroImage from '../../assets/new-hero.png';
 import downloadIcon from '../../assets/download.svg';
 import emailIcon from '../../assets/mail.svg';
 import cv from '../../assets/Mugia-CV-2022.pdf';

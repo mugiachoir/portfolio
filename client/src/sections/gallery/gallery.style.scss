@@ -17,9 +17,9 @@ $shadow1: -1px 1px 1px rgba(0,0,0,0.12),
   );
 
 .gallery-section{
-    color: white;
+    color: #360880;
     padding: 4em 2em;
-    background-image: $primaryGradient;
+    // background-image: $primaryGradient;
     img{
         width: 100%;
         border-radius: .3em;
@@ -37,7 +37,54 @@ $shadow1: -1px 1px 1px rgba(0,0,0,0.12),
     h2{
         margin-bottom: .5em;
       }
+
+      
 }
+
+.personal-project{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   transition: all .5s;
+    border-radius: .4em;
+    .personal-image{
+        margin-bottom: 1em;
+        img{
+          width: 100%;
+          height: 200px;
+        }
+    }
+
+    .personal-body{
+        text-align: left;
+        margin-bottom: 1em;
+        h3{
+            font-size: 2rem;
+          }
+    }
+    .personal-actions{
+        display: flex;
+        margin-top: auto;
+        gap: .5em;
+        align-items: flex-end;
+        .button{
+            background-color: #72FA19;
+            box-shadow: none !important;
+            img{
+                width: 24px !important;
+                transition: none !important;
+                margin-right: .5em;
+                &:hover{
+                    box-shadow: none !important;
+                }
+            }
+        }
+       
+        
+    }
+ 
+  }
 
 @media screen and (min-width:673px){
     .gallery-section{
@@ -52,6 +99,10 @@ $shadow1: -1px 1px 1px rgba(0,0,0,0.12),
 
         h2{
             font-size: 4rem;
+          }
+
+          .grid-container-three{
+            gap: 2em;
           }
     }
 }
