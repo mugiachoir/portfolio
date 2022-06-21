@@ -17,7 +17,7 @@ $shadow1: -1px 1px 1px rgba(0,0,0,0.12),
   );
 
 .gallery-section{
-    color: #360880;
+    color: $fontDark;
     padding: 4em 2em;
     // background-image: $primaryGradient;
     img{
@@ -48,6 +48,7 @@ $shadow1: -1px 1px 1px rgba(0,0,0,0.12),
     flex-direction: column;
    transition: all .5s;
     border-radius: .4em;
+    margin-bottom: 2em;
     .personal-image{
         margin-bottom: 1em;
         img{
@@ -71,6 +72,7 @@ $shadow1: -1px 1px 1px rgba(0,0,0,0.12),
         .button{
             background-color: #72FA19;
             box-shadow: none !important;
+            color: $fontDark !important;
             img{
                 width: 24px !important;
                 transition: none !important;
