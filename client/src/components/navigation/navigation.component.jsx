@@ -31,9 +31,9 @@ const Navigation= React.forwardRef( ({ nav,setNav,url }, ref) => {
                             <ul className={`${burger===true?'slide':''}`}>
                                 <li><ScrollLink activeClass="active" id='homeLink' to="hero" spy={true} smooth={true} offset={-82} duration={500} className='nav-item initial-active' onClick={()=>setBurger(false)}>Home</ScrollLink></li>
                                 <li><ScrollLink activeClass="active" to="about" spy={true} smooth={true} offset={-82} duration={500} className='nav-item' onClick={()=>setBurger(false)}>About Me</ScrollLink></li>
-                                <li><ScrollLink activeClass="active" to="service" spy={true} smooth={true} offset={-82} duration={500} className='nav-item' onClick={()=>setBurger(false)}>Services</ScrollLink></li>
+                                {/* <li><ScrollLink activeClass="active" to="service" spy={true} smooth={true} offset={-82} duration={500} className='nav-item' onClick={()=>setBurger(false)}>Services</ScrollLink></li> */}
                                 <li><ScrollLink activeClass="active" to="projects" spy={true} smooth={true} offset={-82} duration={500} className='nav-item' onClick={()=>setBurger(false)}>Projects</ScrollLink></li>
-                                <li><ScrollLink activeClass="active" to="gallery" spy={true} smooth={true} offset={-82} duration={500} className='nav-item' onClick={()=>setBurger(false)}>3D Gallery</ScrollLink></li>
+                                <li><ScrollLink activeClass="active" to="gallery" spy={true} smooth={true} offset={-82} duration={500} className='nav-item' onClick={()=>setBurger(false)}>Web Dev</ScrollLink></li>
                                 <li><ScrollLink activeClass="active" to="contact" spy={true} smooth={true} offset={-82} duration={500} className='nav-item' onClick={()=>setBurger(false)}>Contact</ScrollLink></li>
                             </ul>
                         </>

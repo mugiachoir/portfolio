@@ -5,6 +5,7 @@ import logo from '../../assets/mugia.svg';
 import email from '../../assets/email.svg';
 import station from '../../assets/station.svg';
 import github from '../../assets/github.svg';
+import linkedin from '../../assets/linkedin.svg';
 import ig from '../../assets/ig.svg';
 import sakura from '../../assets/Sakura.png';
 import monster from '../../assets/monster.png';
@@ -24,6 +25,7 @@ const Footer=React.forwardRef((props,ref)=>{
                         <a href="https://www.artstation.com/mugiamiftahulchoir8" target='_blank' rel='noreferrer'><img src={station} alt="station" />mugiamiftahulchoir8.artstation.com</a>
                         <a href="https://www.instagram.com/mugiadesign/" target='_blank' rel='noreferrer'><img src={ig} alt="ig" />@mugiadesign</a>
                         <a href="https://github.com/mugiachoir" target='_blank' rel='noreferrer'><img src={github} alt="github" />mugiachoir</a>
+                        <a href="https://www.linkedin.com/in/mugia-choir-3b593a1b4/" target='_blank' rel='noreferrer'><img src={linkedin} alt="github" />Linkedin</a>
                     </div>
                 </div>
                 <div className="posts">

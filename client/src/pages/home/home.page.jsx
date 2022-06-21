@@ -30,9 +30,9 @@ const Home=React.forwardRef( (props, ref)=>
                     <TestimonySection />
                     <ExperienceSection />
                 </div>
-                <div id="service">
+                {/* <div id="service">
                     <ServiceSection ref={serviceRef} />
-                </div>
+                </div> */}
                 
                 <div id="projects">
                     <ProjectSection id="projects" ref={projectRef} name={projects.project1.name} title={projects.project1.title} desc={projects.project1.desc} jobs={projects.project1.jobs} img={projects.project1.img} iconColor={projects.project1.iconColor} url={projects.project1.url} link={projects.project1.link}/>
