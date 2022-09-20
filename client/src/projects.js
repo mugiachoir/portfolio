@@ -33,7 +33,7 @@ const projects ={
         "name":"nabati",
         "title":"NABATI",
         "desc":"When I worked for WakafPro Multimedia Internasional (WMI) we got a job to manage a marketing project from PT Nabati. This project includes the creation of an animated video. In this project I received an assignment to help create the assets that will be used in the video.",
-        "jobs":"3D Modeling | Texturing",
+        "jobs":"3D Animation | 3D Modeling",
         "link":"https://www.nabatigroup.com/our-business/ksni/",
         "url":'/nabati',
         "img":"nabati-hero.png",
