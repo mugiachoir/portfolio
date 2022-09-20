@@ -52,7 +52,7 @@ const Footer=React.forwardRef((props,ref)=>{
                 </div>
             </div>
             <div className="bottom-footer">
-                <p>&copy; 2022 Copyright <a href="mugia.design">Mugia</a> All rights reserved</p>
+                <p>&copy; 2022 Copyright <a href="/">Mugia</a> All rights reserved</p>
             </div>
         </div>
     );
