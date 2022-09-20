@@ -11,6 +11,7 @@ import Navigation from './components/navigation/navigation.component';
 // import Rfidiom from "./pages/rfidiom/rfidiom.page";
 import Spinner from "./components/spinner/spinner.component";
 import ErrorBoundary from "./components/error-boundary/error-boundary.component";
+import Nabati from "./pages/nabati/nabati.page";
 
 const Home = lazy(() => import('./pages/home/home.page'));
 const StokWare = lazy(() => import("./pages/stokware/stokware.page"));
@@ -18,6 +19,7 @@ const Aspire = lazy(() => import('./pages/aspire/aspire.page'));
 const Salus = lazy(() => import('./pages/salus/salus.page'));
 const Xmas = lazy(() => import('./pages/xmas/xmas.page'));
 const Rfidiom = lazy(() => import('./pages/rfidiom/rfidiom.page'));
+const Storeel = lazy(() => import('./pages/storeel/storeel.page'));
 
 function App() {
   const heroRef = useRef();
@@ -41,6 +43,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home ref={navRef} setNavigation={setNavigation} />} />
             <Route exact path="/stokware" element={<StokWare setNav={setNav} setNavigation={setNavigation} />} />
+            <Route exact path="/storeel" element={<Storeel setNav={setNav} setNavigation={setNavigation} />} />
+            <Route exact path="/nabati" element={<Nabati setNav={setNav} setNavigation={setNavigation} />} />
             <Route exact path="/aspire" element={<Aspire setNav={setNav} setNavigation={setNavigation} />} />
             <Route exact path="/salus" element={<Salus setNav={setNav} setNavigation={setNavigation} />} />
             <Route exact path="/xmas" element={<Xmas setNav={setNav} setNavigation={setNavigation} />} />

@@ -18,8 +18,12 @@ const ExperienceSection= ()=>{
                         <p className="etxt">2020 - Ongoing</p>
                     </div>
                     <div className="event">
-                        <strong className="edate">Intern in Marketing team at RFIDiom Ltd, Liverpool</strong>
+                        <strong className="edate">Intern in Marketing Team at RFIDiom Ltd, Liverpool</strong>
                         <p className="etxt">2021 - 2022</p>
+                    </div>
+                    <div className="event">
+                        <strong className="edate">Intern in Production Team at WakafPro Multimedia Internasional</strong>
+                        <p className="etxt">2022</p>
                     </div>
                 </div>
             </div>
